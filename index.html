@@ -64,7 +64,7 @@
                             obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
-                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
+                        obj_sep = $("<tr class='table-dark' style='text-align:left' id='" + mark + info[i].level +
                             "'></tr>");
                         obj_sep.appendTo(obj);
                         count = 0;
@@ -77,7 +77,7 @@
                     $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
-                    $("<td width='35%'>" +
+                    $("<td width='30%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
@@ -86,7 +86,7 @@
                     $("<td width='35%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // Comment
-                    $("<td width='25%'>" + info[i].comment + "</td>").appendTo(str);
+                    $("<td width='30%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
                     count++;
 
@@ -94,7 +94,7 @@
                 $("</tbody>").appendTo(obj);
 
                 if (obj_sep != null) {
-                    obj_sep.html("<td class='table-dark' style='text-align:center' colspan='4'>" + "<b>" + mark + x +
+                    obj_sep.html("<td class='table-dark' style='text-align:left' colspan='4'>" + "<b>" + mark + x +
                         " (" + count + "譜面)</b></td>");
                 }
             }
